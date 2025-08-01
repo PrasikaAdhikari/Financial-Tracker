@@ -1,0 +1,13 @@
+.wrapper {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.main {
+  min-height: calc(100vh - 176px);
+}
+
+* {
+  box-sizing: border-box;
+}
