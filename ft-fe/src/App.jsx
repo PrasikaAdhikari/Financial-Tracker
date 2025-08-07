@@ -12,7 +12,8 @@ import { ToastContainer } from "react-toastify";
 import Auth from "./auth/Auth";
 import { getUserDetail } from "./utils/axiosHelper";
 import { useUser } from "./context/userContext";
- 
+import VerifyEmail from "./pages/VerifyEmail";
+
 function App() {
   const [count, setCount] = useState(0);
   const { setUser, autoLogin } = useUser();
@@ -53,6 +54,7 @@ function App() {
                 </Auth>
               }
             />
+            <Route path="verifyemail" element={<VerifyEmail />} />
           </Route>
         </Routes>
       </div>
